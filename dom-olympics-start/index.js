@@ -45,4 +45,9 @@ dropDown.onchange = function() {
 
 }    
 
-    
+const form = document["message"]
+
+form.addEventListener("submit", function(event){
+    event.preventDefault()
+    alert("it works")
+})
