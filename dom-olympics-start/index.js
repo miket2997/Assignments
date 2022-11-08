@@ -53,5 +53,5 @@ form.addEventListener("submit", function(event){
     //alert("it works");
     const div = document.createElement("div");
     div.textContent = form.messageInput.value;
-    document.getElementsByTagName("body")[0].append(div);
+    document.getElementsByClassName("messages")[0].append(div);
 })
