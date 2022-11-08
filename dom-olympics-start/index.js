@@ -46,8 +46,12 @@ dropDown.onchange = function() {
 }    
 
 const form = document["message"]
+form.messageInput.value = "";
 
 form.addEventListener("submit", function(event){
-    event.preventDefault()
-    alert("it works")
+    event.preventDefault();
+    //alert("it works");
+    const div = document.createElement("div");
+    div.textContent = form.messageInput.value;
+    document.getElementsByTagName("body")[0].append(div);
 })
