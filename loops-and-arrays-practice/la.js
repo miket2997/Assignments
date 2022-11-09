@@ -49,4 +49,14 @@ for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
         console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not old enough to see Mad Max, don't let " + peopleWhoWantToSeeMadMaxFuryRoad[i].gender + " in")
     };
 }
-     
+    
+
+var lights = false //false = lights off
+var switches = [3, 1, 1] //true = lights on
+
+for(var i = 0; i < switches.length; i++){
+  for(var k = 0; k < switches[i]; k++){
+    lights = !lights;
+  }
+}
+console.log(lights);
