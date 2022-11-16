@@ -21,10 +21,13 @@
     editButton.addEventListener("click", function(event){
         //console.log("hi");
         var editBox = document.createElement("input");
-        editBox.innerHTML = "<input type = text";
+        //editBox.innerHTML = "<input type = text";
         editBox.value = shoppingItem;
         div.appendChild(editBox);
-        editButton.innerHTML = "save";
+        editButton.textContent = "save";
+        //if(editButton.textContent === "save"){
+            //div.textContent = editBox.value
+        //}
     })
 
     
