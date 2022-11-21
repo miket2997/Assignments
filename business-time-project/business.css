@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+    line-height: 2;
+    background-image: url(https://cdn2.apstatic.com/photos/hike/7015408_medium_1554826305.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    color: darkslategrey;
+    height: 100px;
+}
+
+.navbar h1 {
+    font-size: 50px;
+    margin: auto;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: darkslategrey;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid white;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.about-section {
+    height: 100%;
+    color: white;
+    position: relative;
+    font-size: 25px;
+}
+
+.about-section h1 {
+    font-size: 40px;
+    color: darkslategrey;
+}
+
+.about-section p {
+    padding: 20px 0;
+}
+
+.dogs {
+    color: red;
+}
+
+.about-section .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.about-section-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+}
+
+.about-section-form .contactForm {
+    margin: 30px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.piece {
+    background-color: white;
+    color: darkslategrey;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.button, .submitButton {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.hiking-gear h1 {
+    font-size: 60px;
+    color: darkslategrey;
+    text-align: center;
+    border: 1px dashed white;
+    padding: 10px;
+    margin: auto;
+    background-image: url(https://cdn2.apstatic.com/photos/hike/7015408_medium_1554826305.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hiking-gear p {
+    font-size: 30px;
+    color: darkslategrey;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+
+.hiking-gear ul {
+    font-size: 30px;
+    color: darkslategrey;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+}
+
+
+
+@media(max-width: 768px){
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .about-section .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    body {
+        background-image: url(https://cdn2.apstatic.com/photos/hike/7015408_medium_1554826305.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-section {
+        height: 100%;
+    }
+
+    .about-section-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .about-section-form {
+        justify-self: center;
+        margin: auto;
+    }
+
+    .navbar h1 {
+        height: fit-content;
+    }
+
+    .navbar {
+        height: 100%;
+    }
+    .navbar ul {
+        padding: 10px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media(max-width: 500px){
+    .navbar {
+        height: 100%;
+        width: 100%;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        height: fit-content;
+    }
+}
