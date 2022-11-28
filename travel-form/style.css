@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type=text]{
+    background-color: beige;
+    width: 500px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 40px;
+}
+
+input[type=number]{
+    background-color: lightgray;
+    padding: 10px;
+    font-size: 40px;
+    margin: 20px;
+}
+
+#gend {
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+}
+
+input[type=radio]{
+    padding: 10px;
+    margin: 20px;
+}
+
+#girl{
+    font-size: 20px;
+}
+
+#man {
+    font-size: 20px;
+}
+
+#location {
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+}
+
+
+select{
+    padding: 10px;
+    margin: 20px;
+    width: auto;
+    height: auto;
+    background-color: lightblue;
+}
+
+#restrictions {
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+}
+
+input[type=checkbox]{
+    padding: 10px;
+    margin: 20px;
+}
+
+#veg {
+    font-size: 20px;
+}
+
+#kosh {
+    font-size: 20px;
+}
+
+#glut {
+    font-size: 20px;
+}
+
+#btn {
+    height: auto;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    background-color: lightskyblue;
+    cursor: pointer;
+}

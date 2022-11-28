@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <form name="travel">
+        <input type="text" name="firstName" placeholder="First Name"/>
+        <br>
+        <input type="text" name="lastName" placeholder="Last Name"/>
+        <br>
+        <input type="number" name="age" placeholder="Age"/>
+        <br>
+        <label id="gend">Please select your gender.</label>
+        <br>
+        <input type="radio" name="gender" value="Male" id="male"/>
+        <label for="male" id="man">Male</label>
+        <input type="radio" name="gender" value="Female" id="female"/>
+        <label for="female" id="girl">Female</label>
+        <br>
+        <label id="location">Destination</label>
+        <br>
+        <select name="places">
+            <option>Grand Canyon</option>
+            <option>Yellowstone</option>
+            <option>Yosemite</option>
+        </select>
+        <br>
+        <label id="restrictions">Please check the box of any diet restrictions you may have.</label>
+       <br>
+        <input type="checkbox" name="diet" value="Vegan" id="vegan"/>
+        <label for="vegan" id="veg">Vegan</label>
+        <input type="checkbox" name="diet" value="Kosher" id="kosher"/>
+        <label for="kosher" id="kosh">Kosher</label>
+        <input type="checkbox" name="diet" value="Gluten-Free" id="gluten-free"/>
+        <label for="gluten-free" id="glut">Gluten-free</label>
+        <br>
+       <button id="btn">Submit</button>
+    </form>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
