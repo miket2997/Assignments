@@ -1,0 +1,37 @@
+
+body {
+    display: flex;
+    flex-direction:row
+}
+
+
+#addition {
+    background-color: aqua;
+    padding: 10px;
+    border: 5px solid white;
+    margin: 10px;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+}
+
+#multiplication {
+    background-color: red;
+    padding: 10px;
+    border: 5px solid white;
+    margin: 10px;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+}
+
+
+#subtraction {
+    background-color: chartreuse;
+    padding: 10px;
+    border: 5px solid white;
+    margin: 10px;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+}

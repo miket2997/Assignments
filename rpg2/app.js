@@ -60,7 +60,7 @@ while(!game){
                 }
 
             } else if (runAttack === "p"){
-                console.log(name + ", " + yourHealthPoints + ", " + newInventory)
+                console.log(name + ", " + yourHealthPoints + ", " + newInventory);
             }
             
             }
