@@ -7,6 +7,9 @@ clickButton.addEventListener("click", function(){
     }else {
         localStorage.counter = 1;
     }
-    const countGet = localStorage.getItem("counter");
-    document.getElementById("number").textContent = countGet;
+    
+    document.getElementById("number").textContent = localStorage.counter;
 })
+
+const getValue = localStorage.getItem("counter");
+document.getElementById("number").textContent = getValue;
