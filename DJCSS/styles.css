@@ -1,0 +1,118 @@
+.squares {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.square1 {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid white;
+    transition-property: background-color, height;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+
+.square1:hover {
+    background-color: aqua;
+    height: 200px;
+}
+
+.square2 {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid white;
+    transition-property: background-color, padding;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+}
+
+.square2:hover {
+    background-color: firebrick;
+    padding: 20px;
+}
+
+.square3 {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid white;
+    transition-property: background-color, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.square3:hover {
+    background-color: blue;
+    border-radius: 20%;
+}
+
+
+
+
+.square4 {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid white;
+    transition-property: background-color, width, border-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.square4:hover {
+    background-color: gold;
+    width: 400px;
+    border-color: black;
+}
+
+.square5 {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid white;
+    transition-property: background-color, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.square5:hover {
+    background-color: limegreen;
+    box-shadow: 5px 10px red;
+}
+
+.square6 {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid white;
+    transition-property: background-color, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+
+.square6:hover {
+    background-color: yellow;
+    opacity: 1.0;
+}
+
+
