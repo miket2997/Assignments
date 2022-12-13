@@ -1,0 +1,62 @@
+{
+    "appetizers": [
+        {
+            "name": "bread",
+            "ingredients": ["flour", "yeast", "salt", "water"],
+            "description": "good fresh bread"
+        },
+        {
+            "name": "chicken noodle soup",
+            "ingredients":["chicken", "noodles", "water"],
+            "description": "fresh hot and healthy chicken noodle soup"
+        }
+    ],
+    "cold sandwiches": [
+        {
+            "name": "Turkey",
+            "ingredients": ["turkey", "whole wheat bread", "lettuce"],
+            "description": "cold turkey sandwich with whole wheat bread and lettuce"
+        },
+        {
+            "name": "ham",
+            "ingredients":["ham", "whole wheat bread", "lettuce", "tomato"],
+            "description": "cold ham sandwich with whole wheat bread, lettuce, and tomato"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "Meatball",
+            "ingredients":["meatballs", "italian bread", "parmesan"],
+            "description": "hot and delicious meatball sandwich with parmesan"
+        },
+        {
+            "name": "cheesesteak",
+            "ingredients": ["cheese", "steak", "whole wheat bread"],
+            "description": "hot and tasty cheesesteak sandwich"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "brownies",
+            "ingredients":["eggs", "almonds", "vanilla", "water"],
+            "description": "delicous freshly baked brownies"
+        },
+        {
+            "name": "apple pie",
+            "ingredients":["apples", "wheat", "flour"],
+            "description": "freshly made apple pie guaranteed to taste good"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "water",
+            "ingredients": ["water", "filtered"],
+            "description": "cold filtered water to stay hydrated"
+        },
+        {
+            "name": "Dr. Pepper",
+            "ingredients":["carbonated water", "sugar"],
+            "description": "refreshing soda with free refills"
+        }
+    ]
+}
