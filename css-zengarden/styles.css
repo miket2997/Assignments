@@ -1,0 +1,684 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    color: #325050;
+    background: #fff;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+h1,
+h2 {
+    color: #fff;
+    font-weight: normal;
+}
+
+h1 {
+    padding-top: 0;
+    font-size: 50px;
+    border-bottom: none;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 25px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #2e484c;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+p {
+    line-height: 2;
+    margin: .75em 0;
+    font-size: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+abbr {
+    border: none;
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+    text-decoration: underline dotted;
+}
+
+
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header nav"
+        "first-section first-section fifth-section"
+        "second-section second-section sixth-section"
+        "third-section third-section seventh-section"
+        "fourth-section fourth-section fourth-section"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+
+#navbar ul,
+.view-all,
+.view-all a {
+    width: 100%;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-area: header;
+    width: 100%;
+    border-top: solid 12px rgba(19, 67, 71, 0.8);
+    box-shadow: inset 0 0 100px;
+}
+
+.head img {
+    width: 125px;
+    height: 125px;
+    margin-right: 2.5rem;
+    margin-left: 4.5rem;
+}
+
+.head .headers {
+    text-align: left;
+}
+
+.head,
+#navbar {
+    position: relative;
+    background: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    min-height: 19.375rem;
+}
+
+
+#navbar {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: solid 12px rgba(19, 67, 71, 0.8);
+    box-shadow: inset 0 0 100px;
+}
+
+#navbar, #navbar ul, .next, .previous, .next a, .previous a, .view-all, .view-all a, .fourth-section, footer, footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.next,
+.previous {
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 2.75rem;
+    font-family: 'verdemoderna';
+    width: 70px;
+    height: 70px;
+}
+
+.next a,
+.previous a {
+    width: 70px;
+    height: 70px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.next {
+    margin-right: 1.25rem;
+}
+
+.previous {
+    margin-left: 1.25rem;
+}
+
+.view-all {
+    background: rgba(255, 255, 255, 0.1);
+    height: 70px;
+}
+
+.view-all a {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 19px;
+    height: 70px;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 0 12px;
+    transition: all 0.25s ease-out;
+}
+
+.view-all a:hover,
+.previous a:hover,
+.next a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+
+.container {
+    padding: 1em 10% 1em 15%;
+}
+
+
+
+.first-section {
+    grid-area: first-section;
+    padding: 2.8125rem 0;
+}
+
+.first-section .example {
+    color: #809b7e;
+    font-family: 'Julius Sans One', sans-serif;
+    border-radius: 1px;
+    transition: all 0.25s ease-out;
+}
+
+.first-section .example:hover {
+    background: #05798d;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.first-section .example:hover:before {
+    color: white;
+    background: #035f70;
+}
+
+
+
+.second-section {
+    grid-area: second-section;
+    padding: 2.8125rem 0;
+    background-color: rgba(138, 188, 159, 0.5);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+}
+
+.second-section a {
+    color: blue;
+}
+
+.second-section,
+.sixth-section {
+    background-color: rgba(138, 188, 159, 0.5);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+
+
+.third-section {
+    grid-area: third-section;
+    padding: 2.8125rem 0;
+}
+
+.third-section a {
+    color: blue;
+}
+
+
+.fourth-section {
+    grid-area: fourth-section;
+
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.4);
+    background: #3e5d67 url(http://www.csszengarden.com/214/koi.jpg);
+    background-size: cover;
+    padding: 2.8125rem 0;
+    font-style: italic;
+}
+
+.fourth-section a {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.25s ease-out;
+}
+
+.fourth-section a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    grid-area: footer;
+    background: #134347;
+    width: 100%;
+    padding: 2.1em 10%;
+    flex-wrap: wrap;
+}
+
+
+footer a {
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 4.5rem;
+    margin: 0 3.125rem;
+    transition: all 0.25s ease-out;
+    border-radius: 50%;
+    border-color: white;
+    width: 4.3125rem;
+    height: 4.3125rem;
+}
+
+
+
+.fifth-section {
+    grid-area: fifth-section;
+    background: #edf4f0;
+}
+
+.fifth-section ul {
+    margin-top: 15%;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.fifth-section ul li,
+.sixth-section ul li {
+    color: #607476;
+    font-size: 1.2em;
+    font-style: normal;
+    width: auto;
+    margin: 0 30% 0 15%;
+    padding: 1.5rem 0;
+    border-top: solid 1px #d9e3dc;
+}
+
+.fifth-section ul li a,
+.sixth-section ul li a {
+    display: block;
+    color: #607476;
+    transition: all 0.25s ease-out;
+}
+
+
+
+.fifth-section ul li a:hover,
+.sixth-section ul li a:hover {
+    color: #0599c2;
+}
+
+.fifth-section ul li .designer-name {
+    display: inline;
+    color: #616857;
+    font-size: .875rem;
+    font-style: normal;
+    font-family: 'Libre Baskerville', sans-serif;
+    ;
+}
+
+.fifth-section ul li p {
+    color: #c0cac3;
+    display: inline;
+    margin-right: 5px;
+    font-size: .875rem;
+    font-style: italic;
+    font-family: 'Libre Baskerville', sans-serif;
+    text-transform: lowercase;
+}
+
+.fifth-section ul li:first-child {
+    border: none;
+}
+
+
+
+.sixth-section {
+    grid-area: sixth-section;
+    background: #76a18894;
+    background-image: url(http://www.csszengarden.com/214/bamboo.png);
+}
+
+.sixth-section ul {
+    margin-top: 7.5rem;
+}
+
+.sixth-section ul li {
+    border-top: solid 1px #a0b9ad;
+}
+
+.sixth-section ul li a {
+    font-family: 'Julius Sans One', sans-serif;
+    display: inline;
+}
+
+
+
+.seventh-section {
+    grid-area: seventh-section;
+    background: #edf4f0;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1132px) {
+
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "first-section"
+            "second-section"
+            "third-section"
+            "fourth-section"
+            "footer"
+            "fifth-section"
+            "sixth-section";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    
+
+    .head {
+        align-items: center;
+        min-height: 10rem;
+        grid-area: header;
+    }
+
+    .head img {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 1.25rem 3.125rem 0;
+    }
+
+    .head .headers {
+        text-align: center;
+    }
+
+    
+    #navbar {
+        grid-area: nav;
+        min-height: 70px;
+    }
+
+    #navbar ul,
+    .view-all,
+    .view-all a {
+        width: 100%;
+        grid-area: nav;
+    }
+
+    .previous,
+    .next {
+        margin: 0;
+    }
+
+    
+    .container {
+        padding: .5em 10%;
+    }
+
+    
+    .fifth-section ul,
+    .sixth-section ul {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fifth-section ul li,
+    .sixth-section ul li {
+        margin: 0;
+        padding: .9375rem 0 .9375rem 7.5rem;
+        width: 100%;
+        border-bottom: solid 1px #a0b9ad;
+        border-top: none;
+    }
+
+    .fifth-section ul li:first-child {
+        border-bottom: solid 1px #a0b9ad;
+        border-top: none;
+    }
+
+   
+    footer a {
+        width: 2.875rem;
+        height: 2.875rem;
+        font-size: 3rem;
+        margin: 0 0.6em;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+
+   
+    
+    .fourth-section p {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    
+
+    .fifth-section ul,
+    .sixth-section ul {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fifth-section ul li,
+    .sixth-section ul li {
+        margin: 0;
+        font-size: 1em;
+        padding: 1em 10%;
+        width: 100%;
+        border-bottom: solid 1px #a0b9ad;
+        border-top: none;
+    }
+
+    .fifth-section ul li .designer-name {
+        font-size: .8em;
+    }
+
+    .fifth-section ul li:first-child {
+        border-bottom: solid 1px #a0b9ad;
+        border-top: none;
+    }
+
+    
+
+    footer a {
+        margin: 0 0.3em;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "first-section"
+            "second-section"
+            "third-section"
+            "fourth-section"
+            "footer"
+            "fifth-section"
+            "sixth-section";
+        grid-template-columns: 1fr;
+    }
+
+    
+
+    h1 {
+        margin-top: 15px;
+        font-size: 1.75em;
+    }
+
+    h2 {
+        margin-bottom: 1.25rem;
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 10rem;
+        grid-area: header;
+    }
+
+    #navbar {
+        min-height: 70px;
+        grid-area: nav;
+    }
+
+    .head img {
+        width: 3.125rem;
+        height: 3.125rem;
+        margin: 15px 0 0 0;
+    }
+
+
+    .head .headers {
+        text-align: center;
+    }
+
+    
+
+    .previous,
+    .next {
+        margin: 0;
+    }
+
+    .first-section {
+        padding: 0;
+    }
+
+    .fifth-section ul,
+    .sixth-section ul {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fifth-section ul li,
+    .sixth-section ul li {
+        margin: 0;
+        font-size: 1em;
+        padding: 1em 10%;
+        width: 100%;
+        border-bottom: solid 1px #a0b9ad;
+        border-top: none;
+    }
+
+    .fifth-section ul li .designer-name {
+        font-size: .8em;
+    }
+
+    .fifth-section ul li:first-child {
+        border-bottom: solid 1px #a0b9ad;
+        border-top: none;
+    }
+
+   
+    .fourth-section,
+    .fourth-section .container {
+        padding: 0;
+    }
+
+    .fourth-section p {
+        font-size: 1.3rem;
+        padding: 1rem 6%;
+    }
+
+ 
+    footer a {
+        width: 2.0625rem;
+        height: 2.0625rem;
+        font-size: 2.2rem;
+        margin: 0 .6rem;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: .9rem;
+    }
+
+
+
+    footer a {
+        font-size: 2rem;
+        width: 1.75rem;
+        height: 1.75rem;
+
+    }
+
+    .fifth-section ul,
+    .sixth-section ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fourth-section p {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
