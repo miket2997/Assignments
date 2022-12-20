@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+html {
+    background-image: url(https://media.istockphoto.com/id/476098860/vector/wonderful-morning-in-the-blue-mountains.jpg?s=612x612&w=0&k=20&c=0nuLvsWKXPReu01RvbXTKIwlUYxOQvoXD_qVBrsapxc=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.container {
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%,
+                                         rgba(253, 29, 29, 1) 50%,
+                                         rgba(252, 176, 69, 1) 100%);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+
+input {
+    width: auto;
+
+}
+
+#btn {
+   padding: 2px;
+   background-color: #4CAF50;
+   width: auto;
+   height: auto;
+   cursor: pointer;
+}
+
+#titleinput {
+    padding: 1px;
+    background-color: beige;
+}
+
+#priceinput {
+    padding: 1px;
+    background-color: beige;
+}
+
+#descriptioninput {
+    padding: 1px;
+    background-color: beige;
+}
+
+#imginput {
+    padding: 1px;
+    background-color: beige;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#list > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.true {
+    text-decoration: line-through;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.delete {
+    cursor: pointer;
+    padding: 2px;
+}
+
+h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-orientation: sideways;
+}
+
+.edit {
+    cursor: pointer;
+    padding: 2px;
+    align-items: center;
+    justify-items:center;
+    text-align: center;
+}
+
+
+.editBox {
+    padding: 2px;
+}
