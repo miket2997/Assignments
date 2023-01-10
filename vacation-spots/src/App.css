@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: linear-gradient(#6e6a877d, #9198e5);
+}
+
+
+.title {
+    height: 100px;
+    max-width: 100%;
+    text-align: center;
+    background-image: url(http://www.narviz.com/wp-content/uploads/revslider/home-1/h1-slide1-background.jpg);
+    color: rgb(82, 201, 61);
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5px;
+    font-weight: 600;
+    font-style:oblique;
+}
+
+.card--container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    align-items: center;
+    width: 800px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    max-width: 100%;
+}
+
+.card--container > h1 {
+    padding: 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
