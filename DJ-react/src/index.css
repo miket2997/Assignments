@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html {
+    background-color: rgb(23, 132, 102);
+}
+
+.square {
+    margin: 5px;
+    padding: 5px;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.square--buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.buttons {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
