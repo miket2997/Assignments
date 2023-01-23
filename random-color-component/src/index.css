@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.box--container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.square{
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+  margin: 30px;
+}
+
+.btn {
+  margin: 20px auto 20px auto;
+  display: flex;
+  background-color: lightcyan;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  height: 100px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
