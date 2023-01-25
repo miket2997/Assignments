@@ -147,9 +147,29 @@
 .edit--button {
   margin-right: 20px;
   padding: 5px 20px;
+  cursor: pointer;
+  background-color: #e7e7e7;
 }
 
 .delete--button {
   margin-left: 20px;
   padding: 5px 20px;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+}
+
+.form--button {
+  background-color: #4CAF50;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 22px;
+}
+
+.get--meme--btn {
+  background-color: #008CBA;
+  cursor: pointer;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 22px;
 }
