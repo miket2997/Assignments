@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+
+
+
+button { 
+    border: none; 
+    padding: 10px 5px;
+    cursor: pointer;
+ }
+
+.light-theme {
+    background-color: #cfcfcf;
+    color: #000;
+}
+
+.dark-theme {
+    background-color: #3a3b3c;
+    color: #fff; 
+}
+
+
+
+.nav {
+    height: auto;
+}
+
+
+.nav > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 10px 30px;
+    margin: 0 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.main {
+    height: 78vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggleBtn {
+    width: fit-content;
+    margin: auto;
+    padding: 20px 10px;
+    font-size: 40px;
+    border-radius: 5px;
+}
+
+.main > h1 {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.foot {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot > h2 {
+    text-align: center;
+    margin: auto 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input {
+    width: fit-content;
+    margin: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
+
+.form-btn {
+    width: fit-content;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    background-color: green;
+}
