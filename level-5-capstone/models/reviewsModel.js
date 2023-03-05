@@ -15,6 +15,11 @@ const reviewSchema = new Schema({
         ref: "Trails",
         required: true
     },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: "Users",
+        required: true
+    }
 });
 
 

@@ -16,15 +16,14 @@ app.use("/api/users", require("./routes/usersRouter.js"))
 
 
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb+srv://miket2997:Xq3xuYIBnZGXPiv0@cluster0.wawrkog.mongodb.net/?retryWrites=true&w=majority", () => console.log("Connected to DB"));
+mongoose.connect("mongodb+srv://miket2997:Xq3xuYIBnZGXPiv0@cluster0.wawrkog.mongodb.net/dogHiking?retryWrites=true&w=majority", () => console.log("Connected to DB"));
 
 app.use((req, res, err, next) => {
     console.log(err)
     return res.send({errMsg: err.message})
 })
 
-                                                                                                                                                                                                                                                                       
+
 app.listen(5000, () => {
     console.log("App is running on port 5000")
 })
-                                                                                    
