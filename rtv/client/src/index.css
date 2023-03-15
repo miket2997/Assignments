@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-image: url(https://i.pinimg.com/originals/a3/00/3e/a3003e98211f2a6f86b31a43c3f6b18f.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar > a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.auth--container {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/004/256/911/original/wave-flag-texture-background-the-color-can-be-changed-free-vector.jpg);
+  min-height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth--container > h1 {
+  margin: 20px;
+  color: rgb(17, 17, 18);
+  font-style: oblique;
+}
+
+.toggle--form {
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.auth--form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.auth--form > input {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.auth--form > input:focus {
+  background-color: yellow;
+}
+
+.auth--form > button {
+  margin: 5px 0;
+}
+
+.auth--form > label {
+  text-align: center;
+}
+
+.err--msg {
+  text-align: center;
+}
+
+.logout--btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: white;
+  font-size: larger;
+}
+
+.profile {
+  min-height: 95vh;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/004/256/911/original/wave-flag-texture-background-the-color-can-be-changed-free-vector.jpg);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.user--info {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px;
+  width: 75%;
+}
+
+.profile > h1 {
+  margin: 20px 0;
+  color: white;
+}
+
+.your--issues, .your--comments {
+  margin: 30px;
+}
+
+.issue--profile--container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.issue {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 5px 0;
+  background-color:gainsboro;
+}
+
+.issue > h1 {
+  margin-bottom: 10px;
+  color: rgb(63, 2, 2);
+  border-bottom: 1px dashed;
+}
+
+.issue--form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.issue--form > input, .issue--form > textarea {
+  margin: 5px 0;
+  padding: 5px;
+  width: 300px;
+}
+
+@media screen and (max-width: 700px) {
+  .issue--form > input, .issue--form > textarea {
+    width: 100%;
+  }
+  .user--info {
+    width: 90%;
+  }
+  
+}
+
+.issue--form > button {
+  margin: 5px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: lightskyblue;
+  font-size: larger;
+}
+
+.issue--form > button:hover {
+  background-color: rgb(91, 152, 190);
+  color: white;
+}
+
+.issue--text--area {
+  height: 200px;
+}
+
+.user--comment--container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: gainsboro;
+  padding: 20px;
+  margin-bottom: 5px;
+  border: 1px solid;
+}
+
+.user--comment--container > p {
+  padding: 10px 0;
+}
+
+.public--container {
+  height: auto;
+  min-height: 95vh;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/004/256/911/original/wave-flag-texture-background-the-color-can-be-changed-free-vector.jpg);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.public--container > h1 {
+  margin: 20px 0;
+}
+
+.issue--container {
+  background-color: rgba(219, 213, 213, 0.954);
+  width: 75%;
+  padding: 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 730px) {
+  .issue--container {
+    width: 100%;
+  }
+  .public--container {
+    padding: 5px;
+  }
+}
+
+.comment--text--area {
+  resize: none;
+}
+
+
+.issue--title {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.thumbs--up, .thumbs--down {
+  color: blue;
+  padding: 0;
+  background: none;
+  border: none;
+  margin: 10px;
+}
+
+.voted {
+  padding: 0;
+  background: none;
+  border: none;
+  margin: 10px;
+  text-align: left;
+}
+
+.vote--btns {
+  display: flex;
+  align-items: center;
+}
+
+.comments--h2 {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.toggle--comment {
+  background-color: rgb(109, 109, 227);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.toggle--comment:hover {
+  background-color: rgb(85, 85, 186);
+}
+
+.comment--form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 500px;
+}
+
+@media screen and (max-width: 600px){
+  .comment--form {
+    width: 95%;
+  }
+}
+
+.comment--form > textarea {
+  margin: 10px 0;
+  min-height: 100px;
+  max-width: 75%;
+}
+
+.comment--form > button {
+  width: fit-content;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+textarea:focus {
+  box-shadow: 0 0 5px rgba(20, 20, 172, 0.726);
+  outline: none;
+}
+
+.comment--container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 20px 15px;
+  border-bottom: 1px solid rgb(42, 40, 40);
+  
+}
+
+small {
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+
+.comment--container > p {
+  margin: 5px 0;
+}
+
+.delete--comment {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+  padding: 7px 20px;
+}
+
+.delete--comment:hover {
+  background-color: rgb(184, 0, 0);
+}
+
+.edit--comment {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(75, 117, 133);
+  padding: 7px 20px;
+}
+
+.edit--comment:hover {
+  background-color: rgb(52, 52, 123);
+}
+
+
+.delete--issue {
+  width: fit-content;
+  padding: 5px 20px;
+  background-color: red;
+  color: white;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit--issue {
+  width: fit-content;
+  padding: 5px 20px;
+  background-color: blue;
+  color: white;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
